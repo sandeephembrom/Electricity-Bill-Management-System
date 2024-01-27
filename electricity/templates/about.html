@@ -1,0 +1,41 @@
+{% include 'usernavbar.html' %}
+{% load static %}
+
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>About</title>
+</head>
+<style>
+body{
+ background: no-repeat;
+ background-size: cover;
+}
+</style>
+
+<body style="background-image: url('{% static 'images/elect.jpg' %}')">
+	<div class="container mt-5" style="margin-top : 10%">
+		<h1 class="text-center" style="font-family: 'Monotype Corsiva'; color: white; margin-left: 5%;">About Us</h1>
+		<br><br><br>
+		<div class="row">
+			<div class="col-sm-12">
+				<center>
+					<img src="{% static 'images/mpmkvvcl1_logo.png' %}" width=800 height=200
+						class="img-responsive">
+				</center>
+			</div>
+		</div>
+		<br> <br>
+		<div class="row">
+			<div class="col-sm-12">
+				<center><h3 style="color: white ; background-color : black">Hola folks! It looks like you are here to know us
+					better. Online Electricity Billing System is a user friendly, easy
+					to use website where one can view and pay our electricity bill
+					easily.</h3></center>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

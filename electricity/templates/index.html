@@ -1,0 +1,39 @@
+{% include 'usernavbar.html' %}
+{% load static %}
+<html>
+<head>
+	<title>Electricity Billing - Index Page</title>
+</head>
+   <br><br><br>
+
+<style>
+body{
+ background-color: #e1f5fe;
+
+}
+</style>
+
+<body>
+<br><br><br><br>
+	<div class="container mt-5">
+		<h1 class="text-center "></h1>
+		<div class="col-sm-8 m-auto d-block">
+			<div class="card">
+				<div class="card-body">
+					  <form method="post">
+						  {% csrf_token %}
+						<div class="form-group">
+							<label><b>Enter 10 Digit Consumer Number</b></label>
+							<input type="text" name="searchdata" class="form-control" placeholder="10 Digit Consumer Number" required>
+						</div><br>
+						<div class="form-group">
+					      <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+					    </div>
+					  </form>
+				 </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
